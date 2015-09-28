@@ -25,7 +25,7 @@ cd myproject && vid
 
 ### Movement Key Bindings
 
-- [normal mode] ```space then``` quick jump to any words in the screen, the id for each word will be shown once you pressed ```f```
+- [normal mode] ```space then f``` quick jump to any words in the screen
 - [normal mode] ```ctrl and ]```  jump to definition, need to rebuild ctags first with ```ctags -R --exclude=node_modules```
 - [normal mode] ```ctrl and o``` jump back to last cursor position
 - [normal mode] ```ctrl and i``` jump back to next cursor position
