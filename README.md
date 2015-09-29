@@ -4,18 +4,18 @@ A personal flavored vim run in a Docker container, the goal is to provide minima
 
 ## Usage
 
-Step 1: add vid alias to .bashrc or .zshrc, then ```. ~/.zshrc``` to take effect
+- add vid alias to .bashrc or .zshrc, then ```. ~/.zshrc``` to take effect
 
 ```
 alias vid='docker run \
-                    -it \
-                    -v $(pwd):/work \
-                    -u $(id -u):$(id -g) \
-                    --rm \
-                    bencao/vim_in_docker'
+             -it \
+             -v $(pwd):/work \
+             -u $(id -u):$(id -g) \
+             --rm \
+             bencao/vim_in_docker'
 ```
 
-Step 2: go to project directory and run vid
+- go to project directory and run vid
 
 ```
 cd myproject && vid
@@ -26,7 +26,8 @@ cd myproject && vid
 ### Movement Key Bindings
 
 - [normal mode] ```space then f``` quick jump to any words in the screen
-- [normal mode] ```ctrl and ]```  jump to definition, need to rebuild ctags first with ```ctags -R --exclude=node_modules```
+- [normal mode] ```space then r``` rebuild ctags for current directory
+- [normal mode] ```ctrl and ]```  jump to definition, need to rebuild ctags first
 - [normal mode] ```ctrl and o``` jump back to last cursor position
 - [normal mode] ```ctrl and i``` jump back to next cursor position
 - [normal mode] ```space then space``` jump to and jump back between the current editing file and the last edited file
@@ -40,17 +41,25 @@ cd myproject && vid
 
 - [visual mode] ```g then c``` toggle comment
 
+### Complete Key Bindings
+
+- [insert mode] ```tab``` auto complete with next candidate
+- [insert mode] ```shift and tab``` auto complete with previous candidate
+
 ### Alignment Key Bindings
 
 - [visual mode] ```enter then =``` align selected lines by =
 - [visual mode] ```enter then :``` align selected lines by :
 
-### Buffers (Windows) Key Bindings
+### Windows Key Bindings
 
 - [normal mode] ```space then b``` browse files, use ```ctrl + j/k``` to move between candidates
-- [normal mode] ```space then w``` open a new horizontal buffer on the right
+- [normal mode] ```space then w``` open a new horizontal window on the right
+- [normal mode] ```space then W``` open a new vertical window on the right
 - [normal mode] ```space then q``` shortcut for :q
-- [normal mode] ```space then t``` open directory tree on the left
+- [normal mode] ```space then Q``` shortcut for :q!
+- [normal mode] ```space then t``` toggle directory tree
+- [normal mode] ```space then T``` open directory tree and select current editing file
 - [normal mode] ```ctrl and h/j/k/l``` move left/up/down/right among windows
 
 ### List Available Key Bindings

@@ -18,7 +18,7 @@ execute pathogen#infect()
 let mapleader=" "
 let g:netrw_liststyle=4
 
-""" Basic bindings
+""" Leader prefixed bindings
 " double leader to switch between current and last edit file
 nnoremap <leader><leader> <c-^>
 " open new splits
@@ -26,16 +26,20 @@ nnoremap <leader>w :vsp<CR>
 nnoremap <leader>W :sp<CR>
 " quit
 nnoremap <leader>q :q<CR>
-nnoremap <leader>t :Vexp<CR>
+nnoremap <leader>Q :q!<CR>
+" tree
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>T :NERDTreeFind<CR>
+" browse files/buffers
+nnoremap <leader>b :CtrlPMixed<CR>
+" rebuild ctags
+nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
 
 " moving between windows
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-" browse files/buffers
-nnoremap <leader>b :CtrlPMixed<CR>
 
 """ EasyMotion settings
 let g:EasyMotion_do_mapping=0
@@ -52,3 +56,8 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
+
+""" EasyTags settings
+set tags=./tags;
+let g:easytags_dynamic_files=1
+let g:easytags_async=1
