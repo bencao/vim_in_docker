@@ -5,5 +5,5 @@ docker run \
   -v /:/mnt/host_fs \
   -e "CURRENT_DIRECTORY=$(pwd)" \
   -u $(id -u):$(id -g) \
-  bencao/vim_in_docker \
+  benb88/vim_in_docker \
   $@
