@@ -34,7 +34,6 @@ nnoremap <leader>T :NERDTreeFind<CR>
 nnoremap <leader>b :CtrlPMixed<CR>
 " rebuild ctags
 nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
-
 " moving between windows
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -56,8 +55,3 @@ let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
 colorscheme solarized
-
-""" EasyTags settings
-set tags=./tags;
-let g:easytags_dynamic_files=1
-let g:easytags_async=1

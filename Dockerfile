@@ -18,8 +18,6 @@ RUN git clone https://github.com/tpope/vim-repeat.git $PLUGINDIR/bundle/vim-repe
 RUN git clone https://github.com/ervandew/supertab.git $PLUGINDIR/bundle/supertab
 RUN git clone https://github.com/bling/vim-airline.git $PLUGINDIR/bundle/vim-airline
 RUN git clone https://github.com/tpope/vim-fugitive.git $PLUGINDIR/bundle/vim-fugitive
-RUN git clone https://github.com/xolox/vim-easytags.git $PLUGINDIR/bundle/vim-easytags
-RUN git clone https://github.com/xolox/vim-misc.git $PLUGINDIR/bundle/vim-misc
 RUN git clone https://github.com/scrooloose/nerdtree.git $PLUGINDIR/bundle/nerdtree
 RUN git clone https://github.com/tpope/vim-commentary.git $PLUGINDIR/bundle/vim-commentary
 RUN git clone https://github.com/airblade/vim-gitgutter.git $PLUGINDIR/bundle/vim-gitgutter
@@ -30,7 +28,8 @@ RUN git clone https://github.com/altercation/vim-colors-solarized.git $PLUGINDIR
 
 # add customized vimrc
 ADD vimrc /etc/vim/vimrc.local
+ADD entrypoint.sh /entrypoint.sh
 
-WORKDIR /work
+WORKDIR /mnt/host_fs
 
-CMD ["vim", "/work"]
+ENTRYPOINT ["/entrypoint.sh"]

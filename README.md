@@ -1,25 +1,10 @@
 # vim_in_docker
 
-A personal flavored vim run in a Docker container, the goal is to provide minimal but frequently used features for daily development.
+A personal flavored vim run in a Docker container, the goal is to provide minimal but frequently used features for daily development
 
-## Usage
+## Installation
 
-- add vid alias to .bashrc or .zshrc, then ```. ~/.zshrc``` to take effect
-
-```
-alias vid='docker run \
-             -it \
-             -v $(pwd):/work \
-             -u $(id -u):$(id -g) \
-             --rm \
-             bencao/vim_in_docker'
-```
-
-- go to project directory and run vid
-
-```
-cd myproject && vid
-```
+```sudo curl -LSso /usr/local/bin/vim https://raw.githubusercontent.com/bencao/vim_in_docker/master/vim```
 
 ## Vim Frequently Used Key Bindings
 
