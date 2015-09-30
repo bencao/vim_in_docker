@@ -1,10 +1,10 @@
 # vim_in_docker
 
-A personal flavored vim run in a Docker container, the goal is to provide minimal but frequently used features for daily development
+A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
 
 ## Installation
 
-```sudo curl -LSso /usr/local/bin/vim https://raw.githubusercontent.com/bencao/vim_in_docker/master/vim```
+```sudo curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker```
 
 ## Vim Frequently Used Key Bindings
 
