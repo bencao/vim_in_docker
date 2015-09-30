@@ -4,7 +4,7 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
 ## Installation
 
-```sudo curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker```
+```sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"```
 
 ## Vim Frequently Used Key Bindings
 
