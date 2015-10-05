@@ -2,17 +2,17 @@
 
 A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
 
-![Demo](demo.gif)
-
 ## Installation
 
 ```sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"```
+
+![Demo](demo/installation.gif)
 
 ## Vim Frequently Used Key Bindings
 
 ### Movement Key Bindings
 
-- [normal mode] ```space then f``` quick jump to any words in the screen
+- [normal mode] ```space then f``` quick jump to any words in the screen ![Demo](demo/easy_motion.gif)
 - [normal mode] ```space then r``` rebuild ctags for current directory
 - [normal mode] ```ctrl and ]```  jump to definition, need to rebuild ctags first
 - [normal mode] ```ctrl and o``` jump back to last cursor position
@@ -22,7 +22,7 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
 ### Selection Key Bindings
 
-- [normal mode] ```ctrl and n``` press multiple times to select multiple current word and edit all of them at the same time
+- [normal mode] ```ctrl and n``` press multiple times to select multiple current word and edit all of them at the same time ![Demo](demo/multi_cursor.gif)
 
 ### Comment Key Bindings
 
@@ -40,13 +40,13 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
 ### Windows Key Bindings
 
-- [normal mode] ```space then b``` browse files, use ```ctrl + j/k``` to move between candidates
+- [normal mode] ```space then b``` browse files, use ```ctrl + j/k``` to move between candidates ![Demo](demo/ctrlp.gif)
 - [normal mode] ```space then w``` open a new horizontal window on the right
 - [normal mode] ```space then W``` open a new vertical window on the right
 - [normal mode] ```space then q``` shortcut for :q
-- [normal mode] ```space then Q``` shortcut for :q!
+- [normal mode] ```space then Q``` shortcut for :q!  ![Demo](demo/windowing.gif)
 - [normal mode] ```space then t``` toggle directory tree
-- [normal mode] ```space then T``` open directory tree and select current editing file
+- [normal mode] ```space then T``` open directory tree and select current editing file ![Demo](demo/nerdtree.gif)
 - [normal mode] ```ctrl and h/j/k/l``` move left/up/down/right among windows
 
 ### List Available Key Bindings
