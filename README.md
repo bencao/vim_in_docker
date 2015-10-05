@@ -2,7 +2,7 @@
 
 A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
 
-![Gif Demo](http://www.gfycat.com/TallUnfinishedAfricanporcupine)
+![Demo](demo.gif)
 
 ## Installation
 
