@@ -2,6 +2,8 @@
 
 A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
 
+![Gif Demo](http://www.gfycat.com/TallUnfinishedAfricanporcupine)
+
 ## Installation
 
 ```sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"```
