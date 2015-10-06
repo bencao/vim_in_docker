@@ -20,6 +20,7 @@ RUN git clone https://github.com/bling/vim-airline.git $PLUGINDIR/bundle/vim-air
 RUN git clone https://github.com/tpope/vim-fugitive.git $PLUGINDIR/bundle/vim-fugitive
 RUN git clone https://github.com/scrooloose/nerdtree.git $PLUGINDIR/bundle/nerdtree
 RUN git clone https://github.com/tpope/vim-commentary.git $PLUGINDIR/bundle/vim-commentary
+RUN git clone https://github.com/elixir-lang/vim-elixir.git $PLUGINDIR/bundle/vim-elixir
 RUN git clone https://github.com/airblade/vim-gitgutter.git $PLUGINDIR/bundle/vim-gitgutter
 RUN git clone https://github.com/junegunn/vim-easy-align.git $PLUGINDIR/bundle/vim-easy-align
 RUN git clone https://github.com/easymotion/vim-easymotion.git $PLUGINDIR/bundle/vim-easymotion
