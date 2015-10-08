@@ -34,6 +34,10 @@ set viminfo=
 " show line numbers by default
 set nu
 
+" highlight trailing space
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+
 " remove trailing space for all files (could be dangerous)
 autocmd BufWritePre * :%s/\s\+$//e
 
