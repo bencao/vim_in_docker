@@ -25,6 +25,7 @@ RUN git clone https://github.com/airblade/vim-gitgutter.git $PLUGINDIR/bundle/vi
 RUN git clone https://github.com/junegunn/vim-easy-align.git $PLUGINDIR/bundle/vim-easy-align
 RUN git clone https://github.com/easymotion/vim-easymotion.git $PLUGINDIR/bundle/vim-easymotion
 RUN git clone https://github.com/terryma/vim-multiple-cursors.git $PLUGINDIR/bundle/vim-multiple-cursors
+RUN git clone https://github.com/christoomey/vim-tmux-navigator.git $PLUGINDIR/bundle/vim-tmux-navigator
 RUN git clone https://github.com/altercation/vim-colors-solarized.git $PLUGINDIR/bundle/vim-colors-solarized
 
 # add customized vimrc

@@ -1,39 +1,75 @@
-syntax on
-filetype plugin indent on
+""" Global settings
 
-set autoindent
+" turn on syntax highlight
+syntax on
+
+" highlight search
 set hlsearch
+
+" filetype based indentation
+filetype plugin indent on
+" fallback to autoindent
+" which does nothing more than copy the indentation from the previous line
+" when starting a new line
+set autoindent
+
+" expand tab using space characters, each tab equals to 2 spaces
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
+
+" a special column at the 80 character warns lines that are too long
 set colorcolumn=80
+
+" encoding settings
 set encoding=utf-8
 set termencoding=utf-8
+
+" please take care here of potential to lose some changes
+" due to we map the current host user into the container,
+" when saving to container's directories there will be permission errors
+" so right now we simply don't save swapfile
 set noswapfile
 set viminfo=
+
+" show line numbers by default
+set nu
+
+" remove trailing space for all files (could be dangerous)
+autocmd BufWritePre * :%s/\s\+$//e
+
+""" Package manager settings
 
 " pathogen - the runtime for Vim plugins
 execute pathogen#infect()
 
+""" Shortcut settings
+
 " set space as leader key
 let mapleader=" "
-let g:netrw_liststyle=4
 
-""" Leader prefixed bindings
+"" Leader prefixed bindings
+
 " double leader to switch between current and last edit file
 nnoremap <leader><leader> <c-^>
+
 " open new splits
 nnoremap <leader>w :vsp<CR>
 nnoremap <leader>W :sp<CR>
+
 " quit
 nnoremap <leader>q :q<CR>
 nnoremap <leader>Q :q!<CR>
+
 " tree
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>T :NERDTreeFind<CR>
+
 " browse files/buffers
 nnoremap <leader>b :CtrlPMixed<CR>
+
 " rebuild ctags
 nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
+
 " moving between windows
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -41,16 +77,24 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 """ EasyMotion settings
+
+" configs
 let g:EasyMotion_do_mapping=0
 let g:EasyMotion_smartcase=1
+
+" shortcuts
 map <leader>f <Plug>(easymotion-bd-w)
 map  / <Plug>(easymotion-sn)
 omap  / <Plug>(easymotion-tn)
 
 """ EasyAlign settings
+
+" shortcuts
 vmap <Enter> <Plug>(EasyAlign)
 
 """ Solarized color settings
+
+" configs
 let g:solarized_termtrans=1
 let g:solarized_termcolors=256
 set background=dark
