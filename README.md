@@ -6,7 +6,7 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
     sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"
 
-[Demo](demo/installation.gif)
+![Demo](demo/installation.gif)
 
 ## Plugins Selection and Why
 
