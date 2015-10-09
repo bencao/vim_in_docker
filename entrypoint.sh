@@ -11,11 +11,23 @@ host_fs_path_to_container_fs_path() {
   if [ -z "$1" ]
   then
     echo "$HOST_FS_CURRENT_DIRECTORY"
-  elif [[ "$1" == "/"* ]]
-  then
-    echo "$HOST_FS_ROOT$1"
   else
-    (cd $HOST_FS_CURRENT_DIRECTORY && readlink -f $1)
+    if [[ "$1" == "/"* ]]
+    then
+      FILE_PATH="$HOST_FS_ROOT$1"
+    else
+      FILE_PATH="$HOST_FS_CURRENT_DIRECTORY/$1"
+    fi
+
+    if [ -L $FILE_PATH ]
+    then
+      # if it is an absolute link
+      # we need to map the link target to container fs once more
+      host_fs_path_to_container_fs_path \
+        $(stat --format "%N" $FILE_PATH | awk '{print $3}' | sed "s/'//g")
+    else
+      echo $FILE_PATH
+    fi
   fi
 }
 
