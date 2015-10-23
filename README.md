@@ -41,16 +41,22 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 - [visual mode] `enter then =` align selected lines by =
 - [visual mode] `enter then :` align selected lines by :
 
-### Windows Key Bindings
+### Search & Navigations Bindings
 
 - [normal mode] `space then b` browse files, use `ctrl + j/k` to move between candidates ![Demo](demo/ctrlp.gif)
-- [normal mode] `space then w` split a new horizontal window to the left
-- [normal mode] `space then W` split a new vertical window to the top
-- [normal mode] `space then q` shortcut for :q
-- [normal mode] `space then Q` shortcut for :q!  ![Demo](demo/windowing.gif)
+- [normal mode] `space then a` search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
+
+### Windows Key Bindings
+
 - [normal mode] `space then t` toggle directory tree
 - [normal mode] `space then T` open directory tree and select current editing file ![Demo](demo/nerdtree.gif)
-- [normal mode] `ctrl and h/j/k/l` move left/up/down/right among windows
+- [normal mode] `space then s` split a new horizontal window to the left
+- [normal mode] `space then S` split a new vertical window to the top
+- [normal mode] `space then w` shortcut for :w
+- [normal mode] `space then W` shortcut for :w!
+- [normal mode] `space then q` shortcut for :q
+- [normal mode] `space then Q` shortcut for :q!
+- [normal mode] `ctrl and h/j/k/l` move left/up/down/right among windows ![Demo](demo/windowing.gif)
 
 ### List Available Key Bindings
 

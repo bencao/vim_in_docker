@@ -31,15 +31,12 @@ set termencoding=utf-8
 set noswapfile
 set viminfo=
 
-" show line numbers by default
-set nu
-
 " highlight trailing space
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
 " remove trailing space for all files (could be dangerous)
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd FileType c,cpp,ruby,javascript,elixir autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 """ Package manager settings
 
@@ -57,8 +54,12 @@ let mapleader=" "
 nnoremap <leader><leader> <c-^>
 
 " open new splits
-nnoremap <leader>w :vsp<CR>
-nnoremap <leader>W :sp<CR>
+nnoremap <leader>s :vsp<CR>
+nnoremap <leader>S :sp<CR>
+
+" write file
+nnoremap <leader>w :w<CR>
+nnoremap <leader>W :w!<CR>
 
 " quit
 nnoremap <leader>q :q<CR>
@@ -70,6 +71,9 @@ nnoremap <leader>T :NERDTreeFind<CR>
 
 " browse files/buffers
 nnoremap <leader>b :CtrlPMixed<CR>
+
+" search text patterns
+nnoremap <leader>a :Ack 
 
 " rebuild ctags
 nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
