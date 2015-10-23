@@ -1,25 +1,21 @@
-# vim_in_docker
+*vim_in_docker.txt* A personal flavored vim run in a Docker container
 
-A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
+                    References Manual~
 
-## Installation
+======================================================================
 
-    sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"
+CONTENTS                                  *vim_in_docker-contents*
+    1.Key Bindings........................|vim_in_docker_key_bindings|
 
-![Demo](demo/installation.gif)
-
-## Plugins Selection and Why
-
-[List of Plugins](PLUGINS.md)
-
-## Vim Frequently Used Key Bindings
+======================================================================
+1. Key Bindings                           *vim_in_docker_key_bindings*
 
 ### VIM in Docker Help
 - [normal mode] `space then h` open vim_in_docker help in VIM
 
 ### Movement Key Bindings
 
-- [normal mode] `space then f` quick jump to any words in the screen ![Demo](demo/easy_motion.gif)
+- [normal mode] `space then f` quick jump to any words in the screen
 - [normal mode] `space then r` rebuild ctags for current directory
 - [normal mode] `ctrl and ]`  jump to definition, need to rebuild ctags first
 - [normal mode] `ctrl and o` jump back to last cursor position
@@ -28,7 +24,7 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
 ### Selection Key Bindings
 
-- [normal mode] `ctrl and n` press multiple times to select multiple current word and edit all of them at the same time ![Demo](demo/multi_cursor.gif)
+- [normal mode] `ctrl and n` press multiple times to select multiple current word and edit all of them at the same time
 
 ### Comment Key Bindings
 
@@ -46,20 +42,20 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 
 ### Search & Navigations Bindings
 
-- [normal mode] `space then b` browse files, use `ctrl + j/k` to move between candidates ![Demo](demo/ctrlp.gif)
+- [normal mode] `space then b` browse files, use `ctrl + j/k` to move between candidates
 - [normal mode] `space then a` search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
 
 ### Windows Key Bindings
 
 - [normal mode] `space then t` toggle directory tree
-- [normal mode] `space then T` open directory tree and select current editing file ![Demo](demo/nerdtree.gif)
+- [normal mode] `space then T` open directory tree and select current editing file
 - [normal mode] `space then s` split a new horizontal window to the left
 - [normal mode] `space then S` split a new vertical window to the top
 - [normal mode] `space then w` shortcut for :w
 - [normal mode] `space then W` shortcut for :w!
 - [normal mode] `space then q` shortcut for :q
 - [normal mode] `space then Q` shortcut for :q!
-- [normal mode] `ctrl and h/j/k/l` move left/up/down/right among windows ![Demo](demo/windowing.gif)
+- [normal mode] `ctrl and h/j/k/l` move left/up/down/right among windows
 
 ### List Available Key Bindings
 
@@ -67,4 +63,3 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 - `:nmap` normal mode key mappings
 - `:vmap` visual mode key mappings
 - `:imap` insert mode key mappings
-

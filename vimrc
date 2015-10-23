@@ -53,6 +53,9 @@ let mapleader=" "
 " double leader to switch between current and last edit file
 nnoremap <leader><leader> <c-^>
 
+" open vim_in_docker key binding help
+nnoremap <leader>h :help vim_in_docker<CR>
+
 " open new splits
 nnoremap <leader>s :vsp<CR>
 nnoremap <leader>S :sp<CR>
@@ -65,9 +68,21 @@ nnoremap <leader>W :w!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>Q :q!<CR>
 
+" paste
+nnoremap <leader>p :set paste<CR>
+nnoremap <leader>P :set nopaste<CR>
+
 " tree
-nnoremap <leader>t :NERDTreeToggle<CR>
-nnoremap <leader>T :NERDTreeFind<CR>
+function! ToggleNERDTreeFind()
+  if g:NERDTree.IsOpen()
+    NERDTreeClose
+  else
+    NERDTreeFind
+  endif
+endfunction
+
+nnoremap <leader>t :call ToggleNERDTreeFind()<CR>
+nnoremap <leader>T :NERDTreeToggle<CR>
 
 " browse files/buffers
 nnoremap <leader>b :CtrlPMixed<CR>

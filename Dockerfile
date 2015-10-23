@@ -30,7 +30,13 @@ RUN git clone https://github.com/mileszs/ack.vim.git $PLUGINDIR/bundle/ack.vim &
 
 # add customized vimrc
 ADD vimrc /etc/vim/vimrc.local
+# entrypoint where the magical mapping happens
 ADD entrypoint.sh /entrypoint.sh
+# add doc in vim
+ADD doc/vim_in_docker.txt $PLUGINDIR/bundle/vim_in_docker/doc/vim_in_docker.txt
+
+# build helps
+RUN vim -T xterm +Helptags +qall
 
 WORKDIR /mnt/host_fs
 
