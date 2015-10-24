@@ -60,4 +60,4 @@ then
   cd $(project_root)
 fi
 
-vim $FILE_PATH
+vim +ToggleStripWhitespaceOnSave $FILE_PATH

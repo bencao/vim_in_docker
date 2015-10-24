@@ -18,6 +18,7 @@ RUN git clone https://github.com/mileszs/ack.vim.git $PLUGINDIR/bundle/ack.vim &
     git clone https://github.com/scrooloose/nerdtree.git $PLUGINDIR/bundle/nerdtree && \
     git clone https://github.com/ervandew/supertab.git $PLUGINDIR/bundle/supertab && \
     git clone https://github.com/bling/vim-airline.git $PLUGINDIR/bundle/vim-airline && \
+    git clone https://github.com/ntpeters/vim-better-whitespace.git $PLUGINDIR/bundle/vim-better-whitespace && \
     git clone https://github.com/altercation/vim-colors-solarized.git $PLUGINDIR/bundle/vim-colors-solarized && \
     git clone https://github.com/tpope/vim-commentary.git $PLUGINDIR/bundle/vim-commentary && \
     git clone https://github.com/elixir-lang/vim-elixir.git $PLUGINDIR/bundle/vim-elixir && \
@@ -32,7 +33,7 @@ RUN git clone https://github.com/mileszs/ack.vim.git $PLUGINDIR/bundle/ack.vim &
 ADD vimrc /etc/vim/vimrc.local
 # entrypoint where the magical mapping happens
 ADD entrypoint.sh /entrypoint.sh
-# add doc in vim
+# add vim_in_docker help doc in vim
 ADD doc/vim_in_docker.txt $PLUGINDIR/bundle/vim_in_docker/doc/vim_in_docker.txt
 
 # build helps

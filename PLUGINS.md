@@ -20,6 +20,7 @@ Definition of Importance
 | [NerdTree](https://github.com/scrooloose/nerdtree.git) | Tree view of project files and handy create/delete/update file operations | Essential | [netrw](http://www.vim.org/scripts/script.php?script_id=1075) (shipped with VIM but missing features) |
 | [SuperTab](https://github.com/ervandew/supertab.git) | Autocomplete by hitting tabs which help increasing productivity | High | [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) (better experience but too heavy) |
 | [VIM Airline](https://github.com/bling/vim-airline.git) | Beautiful status line | Medium | [Powerline](https://github.com/powerline/powerline) (too heavy) |
+| [VIM better whitespace](https://github.com/ntpeters/vim-better-whitespace.git) | Showing trailing white space and auto strip when quit | Medium | [VIM trailing whitespace](https://github.com/bronson/vim-trailing-whitespace) (older) |
 | [VIM Colors Solarized](https://github.com/altercation/vim-colors-solarized.git) | A popular & colorful color theme | High | [VIM color gallery](http://cocopon.me/app/vim-color-gallery/) |
 | [VIM Commentary](https://github.com/tpope/vim-commentary.git) | Toggle comment/uncomment for selected lines | Medium | [NerdCommenter](https://github.com/scrooloose/nerdcommenter) |
 | [VIM Easy Align](https://github.com/junegunn/vim-easy-align.git) | Align code lines in a manner that ':' or '=' symbol in the same column | Medium | N/A |

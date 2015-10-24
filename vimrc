@@ -31,13 +31,6 @@ set termencoding=utf-8
 set noswapfile
 set viminfo=
 
-" highlight trailing space
-:highlight ExtraWhitespace ctermbg=red guibg=red
-:match ExtraWhitespace /\s\+$/
-
-" remove trailing space for all files (could be dangerous)
-autocmd FileType c,cpp,ruby,javascript,elixir autocmd BufWritePre <buffer> :%s/\s\+$//e
-
 """ Package manager settings
 
 " pathogen - the runtime for Vim plugins
