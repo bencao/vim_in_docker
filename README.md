@@ -1,6 +1,6 @@
 # vim_in_docker
 
-A personal flavored vim run in a Docker container, it is a super fit for those virtual machines/servers have docker installed.
+A customized vim run in a Docker container, it could be run in MacOS, Linux with docker installed.
 
 ## Installation
 
@@ -68,3 +68,9 @@ A personal flavored vim run in a Docker container, it is a super fit for those v
 - `:vmap` visual mode key mappings
 - `:imap` insert mode key mappings
 
+
+## Know Limitation
+
+### MacOS users can only edit files under /Users directory
+
+In MacOS we always need boot2docker which is a lightweight Linux where we could run docker(which relies on Linux Kernel features such as cgroups), when starting boot2docker, the typical installation only map the host's /Users directory inside the guest's /Users directory(reasonable from security perspective). Considering Vim in Docker is essentially a process in boot2docker VM, it can only read files inside the VM file system, that explains why we can only edit files in the /Users directory.
