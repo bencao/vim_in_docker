@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if [ "$(uname)" == "Darwin" ]; then
   # Mac OS X will always use hard coded user_id and user_group in boot2docker
