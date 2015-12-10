@@ -69,7 +69,7 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 - `:imap` insert mode key mappings
 
 
-## Know Limitation
+## Known Limitation
 
 ### MacOS users can only edit files under /Users directory
 
