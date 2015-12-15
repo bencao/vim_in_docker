@@ -81,7 +81,7 @@ nnoremap <leader>T :NERDTreeToggle<CR>
 nnoremap <leader>b :CtrlPMixed<CR>
 
 " search text patterns
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ack
 
 " rebuild ctags
 nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
@@ -91,6 +91,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+""" CtrlP settings
+
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 """ EasyMotion settings
 
