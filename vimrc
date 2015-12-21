@@ -31,6 +31,9 @@ set termencoding=utf-8
 set noswapfile
 set viminfo=
 
+" read .vimrc from project folder
+set exrc
+
 """ Package manager settings
 
 " pathogen - the runtime for Vim plugins
