@@ -55,6 +55,7 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 - [normal mode] `space then T` open directory tree and select current editing file ![Demo](demo/nerdtree.gif)
 - [normal mode] `space then s` split a new horizontal window to the left
 - [normal mode] `space then S` split a new vertical window to the top
+- [normal mode] `space then o` toggle window/fullscreen
 - [normal mode] `space then w` shortcut for :w
 - [normal mode] `space then W` shortcut for :w!
 - [normal mode] `space then q` shortcut for :q

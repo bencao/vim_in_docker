@@ -77,14 +77,29 @@ function! ToggleNERDTreeFind()
   endif
 endfunction
 
-nnoremap <leader>t :call ToggleNERDTreeFind()<CR>
-nnoremap <leader>T :NERDTreeToggle<CR>
+nnoremap <silent> <leader>t :call ToggleNERDTreeFind()<CR>
+nnoremap <silent> <leader>T :NERDTreeToggle<CR>
+
+" zoom
+function! s:ZoomToggle() abort
+  if exists('t:zoomed') && t:zoomed
+    execute t:zoom_winrestcmd
+    let t:zoomed = 0
+  else
+    let t:zoom_winrestcmd = winrestcmd()
+    resize
+    vertical resize
+    let t:zoomed = 1
+  endif
+endfunction
+command! ZoomToggle call s:ZoomToggle()
+nnoremap <silent> <leader>o :ZoomToggle<CR>
 
 " browse files/buffers
 nnoremap <leader>b :CtrlPMixed<CR>
 
 " search text patterns
-nnoremap <leader>a :Ack
+nnoremap <leader>a :Ack 
 
 " rebuild ctags
 nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
