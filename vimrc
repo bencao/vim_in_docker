@@ -99,10 +99,11 @@ nnoremap <silent> <leader>o :ZoomToggle<CR>
 nnoremap <leader>b :CtrlPMixed<CR>
 
 " search text patterns
-nnoremap <leader>a :Ack 
+nnoremap <leader>a :Ag 
+nnoremap <leader>k :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " rebuild ctags
-nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules .<CR>
+nnoremap <leader>r :!ctags -R --exclude=.git --exclude=node_modules --exclude=_book .<CR>
 
 " moving between windows
 nnoremap <C-j> <C-w>j
@@ -110,9 +111,18 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+""" Ag settings
+
+" search from project root
+let g:ag_working_path_mode = 'r'
+
 """ CtrlP settings
 
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|compiled'
+" search from project root
+let g:ctrlp_working_path_mode = 'ra'
+" read files from git repo
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 """ EasyMotion settings
 

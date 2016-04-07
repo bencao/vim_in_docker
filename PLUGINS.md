@@ -15,7 +15,7 @@ Definition of Importance
 
 | Plugin        | Value           | Importance | Alternatives |
 | :------------ | :-------------- | :--------: | :----------- |
-| [ack.vim](https://github.com/mileszs/ack.vim) | Search text patterns in directories | Essential | [CtrlSF](https://github.com/dyng/ctrlsf.vim) (not utilizing the vim Quickfix List) |
+| [ag.vim](https://github.com/rking/ag.vim) | Search text patterns in directories | Essential | [CtrlSF](https://github.com/dyng/ctrlsf.vim) (not utilizing the vim Quickfix List) |
 | [CtrlP](https://github.com/kien/ctrlp.vim.git) | Quickly navigate to any files given a fuzzy matching pattern | Essential | [Unite](https://github.com/Shougo/unite.vim.git) (sometimes hung for big projects) |
 | [NerdTree](https://github.com/scrooloose/nerdtree.git) | Tree view of project files and handy create/delete/update file operations | Essential | [netrw](http://www.vim.org/scripts/script.php?script_id=1075) (shipped with VIM but missing features) |
 | [SuperTab](https://github.com/ervandew/supertab.git) | Autocomplete by hitting tabs which help increasing productivity | High | [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) (better experience but too heavy) |

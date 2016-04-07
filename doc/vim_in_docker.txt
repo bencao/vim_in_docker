@@ -43,7 +43,8 @@ CONTENTS                                  *vim_in_docker-contents*
 ### Search & Navigations Bindings
 
 - [normal mode] `space then b` browse files, use `ctrl + j/k` to move between candidates
-- [normal mode] `space then a` search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
+- [normal mode] `space then a` search text patterns in directories using Ag, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
+- [normal mode] `space then k` search current word where the cursor is at in directories using Ag, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
 
 ### Windows Key Bindings
 

@@ -3,7 +3,8 @@ FROM debian:jessie
 MAINTAINER Ben Cao <benb88@gmail.com>
 
 RUN apt-get update && \
-    apt-get install -y vim-nox curl git exuberant-ctags ack-grep && \
+    apt-get update && \
+    apt-get install -y vim-nox curl git exuberant-ctags silversearcher-ag && \
     apt-get clean
 
 ENV TERM=xterm-256color PLUGINDIR=/usr/share/vim/vimfiles
@@ -13,8 +14,8 @@ RUN mkdir -p $PLUGINDIR/autoload $PLUGINDIR/bundle && \
     curl -LSso $PLUGINDIR/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 # install plugins
-RUN git clone https://github.com/mileszs/ack.vim.git $PLUGINDIR/bundle/ack.vim && \
-    git clone https://github.com/kien/ctrlp.vim.git $PLUGINDIR/bundle/ctrlp.vim && \
+RUN git clone https://github.com/rking/ag.vim.git $PLUGINDIR/bundle/ag.vim && \
+    git clone https://github.com/ctrlpvim/ctrlp.vim.git $PLUGINDIR/bundle/ctrlp.vim && \
     git clone https://github.com/scrooloose/nerdtree.git $PLUGINDIR/bundle/nerdtree && \
     git clone https://github.com/ervandew/supertab.git $PLUGINDIR/bundle/supertab && \
     git clone https://github.com/bling/vim-airline.git $PLUGINDIR/bundle/vim-airline && \
