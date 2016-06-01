@@ -16,7 +16,7 @@ RUN mkdir -p $PLUGINDIR/autoload $PLUGINDIR/bundle && \
 # install plugins
 RUN git clone https://github.com/rking/ag.vim.git $PLUGINDIR/bundle/ag.vim && \
     git clone https://github.com/ctrlpvim/ctrlp.vim.git $PLUGINDIR/bundle/ctrlp.vim && \
-    git clone httgs://github.com/lambdatoast/elm.vim.git $PLUGINDIR/bundle/elm.vim && \
+    git clone https://github.com/lambdatoast/elm.vim.git $PLUGINDIR/bundle/elm.vim && \
     git clone https://github.com/scrooloose/nerdtree.git $PLUGINDIR/bundle/nerdtree && \
     git clone https://github.com/ervandew/supertab.git $PLUGINDIR/bundle/supertab && \
     git clone https://github.com/bling/vim-airline.git $PLUGINDIR/bundle/vim-airline && \
