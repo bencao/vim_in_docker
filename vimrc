@@ -24,6 +24,10 @@ set colorcolumn=80
 set encoding=utf-8
 set termencoding=utf-8
 
+" more natural split opening
+set splitbelow
+set splitright
+
 " please take care here of potential to lose some changes
 " due to we map the current host user into the container,
 " when saving to container's directories there will be permission errors
@@ -129,8 +133,8 @@ let g:ctrlp_regexp = 1
 """ EasyMotion settings
 
 " configs
-let g:EasyMotion_do_mapping=0
-let g:EasyMotion_smartcase=1
+let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_smartcase = 1
 
 " shortcuts
 map <leader>f <Plug>(easymotion-bd-w)
@@ -141,6 +145,8 @@ omap  / <Plug>(easymotion-tn)
 
 " shortcuts
 vmap <Enter> <Plug>(EasyAlign)
+" Align GitHub-flavored Markdown tables
+au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 
 """ Solarized color settings
 
