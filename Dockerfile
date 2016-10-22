@@ -29,7 +29,9 @@ RUN git clone https://github.com/rking/ag.vim.git $PLUGINDIR/bundle/ag.vim && \
     git clone https://github.com/easymotion/vim-easymotion.git $PLUGINDIR/bundle/vim-easymotion && \
     git clone https://github.com/junegunn/vim-easy-align.git $PLUGINDIR/bundle/vim-easy-align && \
     git clone https://github.com/terryma/vim-multiple-cursors.git $PLUGINDIR/bundle/vim-multiple-cursors && \
-    git clone https://github.com/tpope/vim-repeat.git $PLUGINDIR/bundle/vim-repeat
+    git clone https://github.com/tpope/vim-repeat.git $PLUGINDIR/bundle/vim-repeat && \
+    git clone https://github.com/pangloss/vim-javascript.git $PLUGINDIR/bundle/vim-javascript && \
+    git clone https://github.com/tpope/vim-surround.git $PLUGINDIR/bundle/vim-surround
 
 # add customized vimrc
 ADD vimrc /etc/vim/vimrc.local

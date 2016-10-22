@@ -27,7 +27,9 @@ Definition of Importance
 | [VIM Easy Align](https://github.com/junegunn/vim-easy-align.git) | Align code lines in a manner that ':' or '=' symbol in the same column | Medium | N/A |
 | [VIM EasyMotion](https://github.com/easymotion/vim-easymotion.git) | Move to anywhere in screen in a few key strokes | High | N/A |
 | [VIM Elixir](https://github.com/elixir-lang/vim-elixir.git) | Elixir lang support: syntax highlighting and indent | High/Low (It depends on whether we write Elixir or not) | N/A |
+| [VIM Javascript](https://github.com/pangloss/vim-javascript.git) | JavaScript bundle for vim, this bundle provides syntax highlighting and improved indentation | High/Low (It depends on whether we write Javascript or not) | N/A |
 | [VIM Fugitive](https://github.com/tpope/vim-fugitive.git) | Git integration | Low | N/A |
 | [VIM Gitgutter](https://github.com/airblade/vim-gitgutter.git) | Show file changes (diff to git HEAD) on the right | Low | [VIM Signify](https://github.com/mhinz/vim-signify) (support multiple VCS but we have only git install in container so it's not that useful) |
 | [VIM Multiple Cursor](https://github.com/terryma/vim-multiple-cursors.git) | Select the same keyword in different lines, then change them together | High | N/A |
 | [VIM Repeat](https://github.com/tpope/vim-repeat.git) | Wrap plugin operations as a "Change" so it can be repeated or undoed | Medium | N/A |
+| [VIM Surround](https://github.com/tpope/vim-surround.git) | Surround parentheses, brackets, quotes, XML tags, and more | Medium | N/A |
