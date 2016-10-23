@@ -36,7 +36,7 @@ RUN git clone https://github.com/rking/ag.vim.git $PLUGINDIR/bundle/ag.vim && \
 # add customized vimrc
 ADD vimrc /etc/vim/vimrc.local
 # entrypoint where the magical mapping happens
-ADD entrypoint.sh /entrypoint.sh
+ADD ./entrypoint.sh /usr/local/bin/entrypoint.sh
 # add vim_in_docker help doc in vim
 ADD doc/vim_in_docker.txt $PLUGINDIR/bundle/vim_in_docker/doc/vim_in_docker.txt
 
@@ -45,4 +45,4 @@ RUN vim -T xterm +Helptags +qall
 
 WORKDIR /mnt/host_fs
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
