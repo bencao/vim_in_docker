@@ -58,10 +58,6 @@ cd $(directory $FILE_PATH)
 if [ ! -z $(project_root) ]
 then
   cd $(project_root)
-  if [ -f .vim_in_docker_rc ]
-  then
-    source .vim_in_docker_rc
-  fi
 fi
 
 vim +ToggleStripWhitespaceOnSave $FILE_PATH
