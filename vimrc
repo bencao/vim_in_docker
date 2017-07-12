@@ -103,7 +103,7 @@ nnoremap <silent> <leader>o :ZoomToggle<CR>
 nnoremap <leader>b :CtrlPMixed<CR>
 
 " search text patterns
-nnoremap <leader>a :Ag 
+nnoremap <leader>a :Ag<SPACE>
 nnoremap <leader>k :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " rebuild ctags

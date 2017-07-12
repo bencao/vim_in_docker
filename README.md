@@ -15,52 +15,52 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 ## Vim Frequently Used Key Bindings
 
 ### VIM in Docker Help
-- [normal mode] `space then h` open vim_in_docker help in VIM
+- [normal mode] <kbd>Space then h</kbd> open vim_in_docker help in VIM
 
 ### Movement Key Bindings
 
-- [normal mode] `space then f` quick jump to any words in the screen ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/easy_motion.gif)
-- [normal mode] `space then r` rebuild ctags for current directory
-- [normal mode] `ctrl and ]`  jump to definition, need to rebuild ctags first
-- [normal mode] `ctrl and o` jump back to last cursor position
-- [normal mode] `ctrl and i` jump back to next cursor position
-- [normal mode] `space then space` jump to and jump back between the current editing file and the last edited file
+- [normal mode] <kbd>Space then f</kbd> quick jump to any words in the screen ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/easy_motion.gif)
+- [normal mode] <kbd>Space then r</kbd> rebuild ctags for current directory
+- [normal mode] <kbd>Ctrl+]</kbd> jump to definition, need to rebuild ctags first
+- [normal mode] <kbd>Ctrl+o</kbd> jump back to last cursor position
+- [normal mode] <kbd>Ctrl+i</kbd> jump back to next cursor position
+- [normal mode] <kbd>Space then Space</kbd> jump to and jump back between the current editing file and the last edited file
 
 ### Selection Key Bindings
 
-- [normal mode] `ctrl and n` press multiple times to select multiple current word and edit all of them at the same time ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/multi_cursor.gif)
+- [normal mode] <kbd>Ctrl+n</kbd> press multiple times to select multiple current word and edit all of them at the same time ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/multi_cursor.gif)
 
 ### Comment Key Bindings
 
-- [visual mode] `g then c` toggle comment
+- [visual mode] <kbd>g then c</kbd> toggle comment
 
 ### Complete Key Bindings
 
-- [insert mode] `tab` auto complete with next candidate
-- [insert mode] `shift and tab` auto complete with previous candidate
+- [insert mode] <kbd>Tab</kbd> auto complete with next candidate
+- [insert mode] <kbd>Shift+Tab</kbd> auto complete with previous candidate
 
 ### Alignment Key Bindings
 
-- [visual mode] `enter then =` align selected lines by =
-- [visual mode] `enter then :` align selected lines by :
+- [visual mode] <kbd>Enter then =</kbd> align selected lines by =
+- [visual mode] <kbd>Enter then :</kbd> align selected lines by :
 
 ### Search & Navigations Bindings
 
-- [normal mode] `space then b` browse files, use `ctrl + j/k` to move between candidates ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/ctrlp.gif)
-- [normal mode] `space then a` search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
+- [normal mode] <kbd>Space then b</kbd> browse files, use `ctrl + j/k` to move between candidates ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/ctrlp.gif)
+- [normal mode] <kbd>Space then a</kbd> search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
 
 ### Windows Key Bindings
 
-- [normal mode] `space then t` toggle directory tree
-- [normal mode] `space then T` open directory tree and select current editing file ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/nerdtree.gif)
-- [normal mode] `space then s` split a new horizontal window to the left
-- [normal mode] `space then S` split a new vertical window to the top
-- [normal mode] `space then o` toggle window/fullscreen
-- [normal mode] `space then w` shortcut for :w
-- [normal mode] `space then W` shortcut for :w!
-- [normal mode] `space then q` shortcut for :q
-- [normal mode] `space then Q` shortcut for :q!
-- [normal mode] `ctrl and h/j/k/l` move left/up/down/right among windows ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/windowing.gif)
+- [normal mode] <kbd>Space then t</kbd> toggle directory tree
+- [normal mode] <kbd>Space then T</kbd> open directory tree and select current editing file ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/nerdtree.gif)
+- [normal mode] <kbd>Space then s</kbd> split a new horizontal window to the left
+- [normal mode] <kbd>Space then S</kbd> split a new vertical window to the top
+- [normal mode] <kbd>Space then o</kbd> toggle window/fullscreen
+- [normal mode] <kbd>Space then w</kbd> shortcut for :w
+- [normal mode] <kbd>Space then W</kbd> shortcut for :w!
+- [normal mode] <kbd>Space then q</kbd> shortcut for :q
+- [normal mode] <kbd>Space then Q</kbd> shortcut for :q!
+- [normal mode] <kbd>Ctrl+h</kbd>/<kbd>Ctrl+j</kbd>/<kbd>Ctrl+k</kbd>/<kbd>Ctrl+l</kbd> move left/up/down/right among windows ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/windowing.gif)
 
 ### List Available Key Bindings
 
