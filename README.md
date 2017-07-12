@@ -4,7 +4,7 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 
 ## Installation
 
-    sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod +x /usr/local/bin/vim"
+    sudo -- sh -c "curl -LSso /usr/local/bin/vim http://bit.ly/vim_in_docker; chmod  + x /usr/local/bin/vim"
 
 ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/installation.gif)
 
@@ -21,14 +21,14 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 
 - [normal mode] <kbd>Space then f</kbd> quick jump to any words in the screen ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/easy_motion.gif)
 - [normal mode] <kbd>Space then r</kbd> rebuild ctags for current directory
-- [normal mode] <kbd>Ctrl+]</kbd> jump to definition, need to rebuild ctags first
-- [normal mode] <kbd>Ctrl+o</kbd> jump back to last cursor position
-- [normal mode] <kbd>Ctrl+i</kbd> jump back to next cursor position
+- [normal mode] <kbd>Ctrl + ]</kbd> jump to definition, need to rebuild ctags first
+- [normal mode] <kbd>Ctrl + o</kbd> jump back to last cursor position
+- [normal mode] <kbd>Ctrl + i</kbd> jump back to next cursor position
 - [normal mode] <kbd>Space then Space</kbd> jump to and jump back between the current editing file and the last edited file
 
 ### Selection Key Bindings
 
-- [normal mode] <kbd>Ctrl+n</kbd> press multiple times to select multiple current word and edit all of them at the same time ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/multi_cursor.gif)
+- [normal mode] <kbd>Ctrl + n</kbd> press multiple times to select multiple current word and edit all of them at the same time ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/multi_cursor.gif)
 
 ### Comment Key Bindings
 
@@ -37,7 +37,7 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 ### Complete Key Bindings
 
 - [insert mode] <kbd>Tab</kbd> auto complete with next candidate
-- [insert mode] <kbd>Shift+Tab</kbd> auto complete with previous candidate
+- [insert mode] <kbd>Shift + Tab</kbd> auto complete with previous candidate
 
 ### Alignment Key Bindings
 
@@ -46,8 +46,8 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 
 ### Search & Navigations Bindings
 
-- [normal mode] <kbd>Space then b</kbd> browse files, use `ctrl + j/k` to move between candidates ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/ctrlp.gif)
-- [normal mode] <kbd>Space then a</kbd> search text patterns in directories using Ack, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
+- [normal mode] <kbd>Space then b</kbd> browse files, use <kbd>Ctrl + j</kbd>/<kbd>Ctrl + k</kbd> to move between candidates ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/ctrlp.gif)
+- [normal mode] <kbd>Space then a</kbd> search text patterns in directories using Ag, the result will be shown in a [Quickfix](http://usevim.com/2012/08/24/vim101-quickfix/) window
 
 ### Windows Key Bindings
 
@@ -60,7 +60,7 @@ A customized vim run in a Docker container, it could be run in MacOS, Linux with
 - [normal mode] <kbd>Space then W</kbd> shortcut for :w!
 - [normal mode] <kbd>Space then q</kbd> shortcut for :q
 - [normal mode] <kbd>Space then Q</kbd> shortcut for :q!
-- [normal mode] <kbd>Ctrl+h</kbd>/<kbd>Ctrl+j</kbd>/<kbd>Ctrl+k</kbd>/<kbd>Ctrl+l</kbd> move left/up/down/right among windows ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/windowing.gif)
+- [normal mode] <kbd>Ctrl + h</kbd>/<kbd>Ctrl + j</kbd>/<kbd>Ctrl + k</kbd>/<kbd>Ctrl + l</kbd> move left/up/down/right among windows ![Demo](https://raw.githubusercontent.com/bencao/vim_in_docker/master/demo/windowing.gif)
 
 ### List Available Key Bindings
 
