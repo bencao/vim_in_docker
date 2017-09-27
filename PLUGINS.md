@@ -32,4 +32,5 @@ Definition of Importance
 | [VIM Gitgutter](https://github.com/airblade/vim-gitgutter.git) | Show file changes (diff to git HEAD) on the right | Low | [VIM Signify](https://github.com/mhinz/vim-signify) (support multiple VCS but we have only git install in container so it's not that useful) |
 | [VIM Multiple Cursor](https://github.com/terryma/vim-multiple-cursors.git) | Select the same keyword in different lines, then change them together | High | N/A |
 | [VIM Repeat](https://github.com/tpope/vim-repeat.git) | Wrap plugin operations as a "Change" so it can be repeated or undoed | Medium | N/A |
+| [VIM Sleuth](https://github.com/tpope/vim-sleuth.git) | Automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file | High | N/A |
 | [VIM Surround](https://github.com/tpope/vim-surround.git) | Surround parentheses, brackets, quotes, XML tags, and more | Medium | N/A |

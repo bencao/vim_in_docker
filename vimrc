@@ -13,10 +13,6 @@ filetype plugin indent on
 " when starting a new line
 set autoindent
 
-" expand tab using space characters, each tab equals to 2 spaces
-set expandtab
-set tabstop=2 shiftwidth=2 softtabstop=2
-
 " a special column at the 80 character warns lines that are too long
 set colorcolumn=80
 
